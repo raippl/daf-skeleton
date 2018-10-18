@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ESSearch from './ESSearch'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -10,7 +9,7 @@ class App extends Component {
            <Header />
             <div className="app-body app-body pub">
                 <div className="container">
-                    <ESSearch />
+                    {/* Insert here your App Code */}
                 </div>
             </div>
             <Footer />

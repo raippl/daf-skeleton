@@ -1,1 +1,11 @@
-Reactivesearch web app is based on https://opensource.appbase.io/reactivesearch/
+This is the Daf Skeleton web app.
+
+You can integrate you code starting from App.js component.
+
+Follow this steps in order to deploy the app inside the Daf environment: 
+
+1 - change <appname> inside /kubernetes/test/daf-skeleton.yml file
+2 - sudo docker build --no-cache -t nexus.teamdigitale.test/<appname>:1.0.0 .
+3 - sudo docker push nexus.teamdigitale.test/<appname>:1.0.0
+4 - kubectl delete -f kubernetes/test/daf-skeleton.yml (not the first time!!!)
+5 - kubectl create -f kubernetes/test/daf-skeleton.yml
